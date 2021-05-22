@@ -55,18 +55,9 @@ public class WordAdapter extends ArrayAdapter<Word> {
             imageView.setImageResource(currentWord.getImgageID());
             imageView.setVisibility(View.VISIBLE);
         }
+        convertView.setHapticFeedbackEnabled(true);
         ImageView playIcon = convertView.findViewById(R.id.playIcon);
         playIcon.setBackgroundColor(color);
-
-
-        convertView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                MediaPlayer mediaPlayer = MediaPlayer.create(getContext(),currentWord.getAudioID());
-                mediaPlayer.start();
-            }
-        });
-
 
         return convertView;
     }

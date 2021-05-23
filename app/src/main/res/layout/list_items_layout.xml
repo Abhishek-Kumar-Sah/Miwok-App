@@ -50,7 +50,7 @@
         android:id="@+id/playIcon"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:src="@android:drawable/ic_media_play"
+        android:src= "@drawable/baseline_play_arrow_white_48"
         android:layout_gravity="center"
         android:layout_weight="1"
         />
